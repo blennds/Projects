@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+/*------------------------------------------------HEADERI---------------------------------------------------------------*/
+     header{ /*headeri */
+        height:0px;
+        width:100%;
+        z-index:12;
+        position:fixed;
+        
+        }
+   
+     .nav-up{/*it help when we scroll to hide header*/
+      top: -70px;
+       
+    }
+  
+  ul{
+      text-align: left;
+       }
+    
+    ul li {
+        display: flex ;
+              margin: 0 10px;
+    }
+
+    ul li a{
+        color: #000;
+        font-size: 17px;
+        padding: 0px 10px;
+        border-radius: 3px;
+        text-transform: uppercase;
+       font-weight: 700;
+      /* margin-top: 15px !important; */
+      text-decoration: none;
+    }
+
+ a.aktive , a:hover{
+        background: #FFF;
+        transition: .5s;
+        color:#1F1F1F !important;
+    }
+
+   
+    /*----------------------------------------------------------LOGO-----------------------------------------------*/
+      .logo{
+          height: 100px;
+          width: 100px;
+          float: left;
+          margin-top: -50px;
+          margin-left:10px;
+          
+        }
+         .a-logo:hover{
+         background-color: transparent;
+       }
+/*----------------------------------------------------------SOCIAL MEDIA-----------------------------------------------*/
+
+  .social-media ul{
+        position:absolute;
+       float: right;
+        display: flex;
+          margin-left:30px;
+        }
+        
+        .social-media ul li {
+        list-style:none;
+        margin:0 -5px;
+         
+        }
+   .social-media ul li .fa{
+        font-size: 30px;
+        transition:0.6s;
+        padding: 5px;
+        border-radius:25%;
+        border: none; 
+        background-color: #fff;
+       }
+         
+   .social-media ul li a:hover {
+       background-color:transparent; 
+       border: none;
+        }
+
+.fa-instagram, .fa-envelope-o ,.fa-whatsapp{
+  color:#1F1F1F;
+  transition: .1s;
+}
+
+   .fa-instagram:hover{  
+        color: #fff;
+         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+          background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+
+         .fa-envelope-o:hover{
+           color:#fff;
+            background:linear-gradient(#0489c9 30%,rgb(173, 223, 241) ) ;
+        }
+        .fa-whatsapp:hover{
+            color:#fff;
+             background: linear-gradient(#25d366,#25d366);
+           }
+      
+        
+       .shopping-cart{
+         /* margin-left: 90%; */
+          margin-top:0px;
+          position: relative;
+          color: white !important;
+         
+        }
+      
+
+
+        .news1{
+          position: relative;
+          height: auto;
+          width:auto ;
+       margin-top: 100px !important;
+          background-color:rgb(240, 236, 236);
+          float: left !important;
+        }
+
+         .foto1{
+          height: 500px !important;
+          width:800px;
+        }
+h3{
+  text-align: left;
+}
+p{
+  text-align: left;
+  font-size: 15px;
+}
+
+
+        
+  .news2{
+          position: relative;
+          height: 500px !important;
+          width:300px !important;
+        margin: 3% 3% !important;
+          background-color:rgb(240, 236, 236);  
+       float: left;
+            padding: 0px;
+       
+           
+                }
+
+  
+
+  
+footer{
+  width:100%;
+  background-color: #050505;
+   color: #fff;
+   padding-top: 40px;
+   float: left;
+   position: relative;
+   margin-top: 18%;
+   height: auto;
+}
+.footer-navigation {
+  display: inline-block;
+  position: relative;
+
+}
+.footer-contact {
+  display: inline-block;
+  position: relative;
+}
+
+.footer-navigation {
+  display: inline-block;
+  position: relative;
+
+}
+
+
+.footer-follow {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.footer-follow .fa{
+ margin:10px 10px;
+  align-items:center;}
+
+.footer-navigation a, .footer-follow a{
+  color: #fff;
+  background-color: transparent;
+}
+
+ .footer-follow a:hover{
+  background-color: transparent;
+}
+
+.footer-legal {
+  display: inline-block;
+  position: relative;
+
+}
+
+
+.footer-bottom {
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+ font-style: italic;
+
+ padding: 20px 0;
+ position: relative;
+ margin-top: 150px;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+ word-spacing: 2px;
+ letter-spacing: 1px;
+ text-transform: capitalize;
+ position: relative;
+ text-align: center;
+}

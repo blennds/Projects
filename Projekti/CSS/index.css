@@ -1,0 +1,572 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+
+.body{
+
+background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url(https://5ly.co/blog/content/images/2021/01/check-whether-your-business-is-e-commerce-ready-01.jpg);
+  height:100vh;
+  background-position:center;
+  background-size:cover;
+    animation-name: body;
+animation: body  50s linear infinite;
+   }
+
+   @keyframes body {
+ 33%   {background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url(https://img.freepik.com/free-photo/laptop-shopping-bags-online-shopping-concept_1423-189.jpg?size=626&ext=jpg&ga=GA1.2.1006131225.1638403200);
+ 
+  }
+
+66%  {background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url(https://w7.pngwing.com/pngs/120/861/png-transparent-shopping-cart-on-top-of-silver-laptop-computer-digital-marketing-e-commerce-information-online-shopping-retail-shopping-company-retail-computer.png);
+}
+
+100%{
+   background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) ,url(https://5ly.co/blog/content/images/2021/01/check-whether-your-business-is-e-commerce-ready-01.jpg);
+ 
+}
+
+}
+
+/*------------------------------------------------HEADERI---------------------------------------------------------------*/
+   header{ /*headeri */
+      height:70px;
+      width:100%;
+      z-index:12;
+      position:fixed;
+      
+      }
+
+
+  .nav-up{
+    top: -90px;
+     
+  }
+ul{
+    text-align: left;
+     }
+  
+  ul li {
+      display: flex ;
+            margin: 0 10px;
+  }
+
+  ul li a{
+      color: #000;
+      font-size: 17px;
+      padding: 0px 10px;
+      border-radius: 3px;
+      text-transform: uppercase;
+     font-weight: 700;
+    /* margin-top: 15px !important; */
+    text-decoration: none;
+  }
+
+a.aktive , a:hover{
+      background: #FFF;
+      transition: .5s;
+      color:#1F1F1F !important;
+  }
+
+ 
+  /*----------------------------------------------------------LOGO-----------------------------------------------*/
+    .logo{
+        height: 100px;
+        width: 100px;
+        float: left;
+        margin-top: -50px;
+        margin-left:10px;
+        background-color:none; 
+      }
+     
+     .a-logo:hover{
+       background-color: transparent;
+     }
+/*----------------------------------------------------------SOCIAL MEDIA-----------------------------------------------*/
+
+.social-media ul{
+      position:absolute;
+     float: right;
+      display: flex;
+        margin-left:30px;
+      }
+      
+      .social-media ul li {
+      list-style:none;
+      margin:0 -5px;
+       
+      }
+ .social-media ul li .fa{
+      font-size: 30px;
+      transition:0.6s;
+      padding: 5px;
+      border-radius:25%;
+      border: none; 
+      background-color: #fff;
+     }
+       
+ .social-media ul li a:hover {
+     background-color:transparent; 
+     border: none;
+      }
+
+.fa-instagram, .fa-envelope-o ,.fa-whatsapp{
+color:#1F1F1F;
+transition: .1s;
+}
+
+ .fa-instagram:hover{  
+      color: #fff;
+       background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      }
+
+       .fa-envelope-o:hover{
+         color:#fff;
+          background:linear-gradient(#0489c9 30%,rgb(173, 223, 241) ) ;
+      }
+      .fa-whatsapp:hover{
+          color:#fff;
+           background: linear-gradient(#25d366,#25d366);
+         }
+    
+      
+     .shopping-cart{
+       /* margin-left: 90%; */
+        margin-top:0px;
+        position: relative;
+        color: white !important;
+       
+      }
+    
+/*----------------------------------------------------------FOTOJA DHE SHKRIMI ANASH-------------------------------------*/        
+    
+    .text{
+      height: 30%;
+      width: 100%;
+      top:42%;
+      position: absolute;
+    }
+      .title {
+      position:relative;
+        background-color:none;
+      font-size:70px !important;
+      color:rgb(253, 242, 242);
+      text-align: center;
+      font-weight: 1000;
+      font-family: 'Times New Roman';
+        }
+      
+      .slogani  {
+      position:relative;
+      top:10px;
+      font-size:33px;
+      font-family:Times New Roman;
+      background-color:none;
+      color:rgb(253, 242, 242);
+      text-align: center;
+      }
+      
+ .btn{
+     top: 75%;
+     background-color: #4d6061;
+     border-radius: 30px !important;
+     width:200px;
+     height: 40px;
+     font-size: 16px;
+     font-weight: 700;
+     color: #fff;
+     border: none;
+
+    
+ }
+ button:hover {
+  background-color: rgb(219, 123, 123) !important;
+  font-size: 20px;
+  transition:  .5s ease;
+}  
+
+
+.btn:hover{
+  background-color: transparent;
+}
+
+html{/*kur e prekim butoni me scroll*/
+  scroll-behavior: smooth;
+}
+/*----------------------------------------------------------SQUARE PER GAMING PC-------------------------------*/
+.square{
+  position: relative;
+  top: 100%;
+  width:100%;
+  height:auto;
+  float:left;
+  background-color:#fff;
+  
+  }
+  .heading{
+      position:relative;
+      font-size: 40px;
+      font-family:Times New Roman;
+      letter-spacing:1px;
+      color:#1F1F1F;
+      text-align: center;
+      }
+
+      
+
+  .column { 
+    position: relative;         
+          width: auto;
+          padding: 0px;
+          height: 630px;
+          display: inline-block;
+          margin: 100px 20px;
+           }
+
+      .percentage{
+        margin: 10px 10px ; 
+        float: right;
+        background-color: #e85039;
+        color: #fff;
+        height: 25px  !important;
+        border-radius: 3px;
+     
+        font-weight: 500;
+        position: absolute;
+      }
+
+        .gamingPC{
+          height: 350px;
+          width: 250px;
+          position: relative;
+          display: flex;
+          margin: 10px auto;
+        }
+
+        h6{
+          position: relative;
+          text-align: left;
+          font-size: 18px;
+          color: #1F1F1F;
+          font-weight: 500;
+          font-style: italic;
+          font-family: calibri;
+          margin-top:140%;
+        }
+
+.star{
+        position: relative;
+        font-size: 18px;
+        float: left;
+         }
+
+        .price{
+          position: absolute;
+          font-size: 30px;
+          color: rgb(184, 32, 32);
+          margin-top: 8%;
+           float: left;
+         margin-left: 5px;
+           }
+        
+        .column:hover{
+         color: rgba(231, 219, 219, 0.836);
+         transform: translateY(-40px);
+          transition: .5s;
+         box-shadow: 15px 15px  20px 20px;
+        border-radius:15px; 
+       
+        }
+  hr{/*vija mbi qmim*/
+        position: relative;
+        transform: rotate(-8deg);
+        height: 2px !important;
+        border-radius:5px;
+      color:  #850a0a !important;
+        margin-top: -13px !important;
+       border: none;
+       width: 80px;  
+       text-align: right;  
+       opacity: 3 !important ;   
+}
+
+.previous-price{
+position: relative;
+color: grey;
+font-size: 18px;
+float: right;
+}
+     
+.addToCart{/*BUTONI POSHT QMIMIIT*/
+margin-top:  85px;
+margin-left: 3%;
+     background-color: #4d6061;
+     border-radius: 30px;
+     width:94%;
+     height: 40px;
+     font-size: 16px;
+     font-weight: 700;
+     color: #fff;
+     border: none;
+}
+      
+
+/*------------------------------------------------------LLAPTOPI--------------------------------------------*/
+
+
+.square2 {
+
+  position: relative;
+  top: 100%;
+  width:100%;
+  float:left;
+ height:auto;
+background:radial-gradient(#fff, #ffd6d6);
+}
+
+.laptop{
+  height: auto;
+  width: auto;
+  float: left;
+  margin-bottom: 50px;
+}
+
+
+.subheading{
+  font-family: Arial;
+  font-style: italic;
+  color: rgb(73, 73, 73);
+  font-size: 17px;
+  top:20px;
+  margin-right: 30px;
+ text-align: center;
+ position: relative;
+}
+
+.laptopHeading{
+  position: relative;
+  top:40px;
+  font-size: 42px;
+  text-align: center;
+  color: #1F1F1F;
+  font-family: Papyrus;
+}
+
+.buyNow{/*butoni buy now*/
+  position: relative;
+  margin: 50px auto;  
+   display: flex;
+   justify-content: center;
+     background-color: #4d6061;
+     border-radius: 30px;
+     width:200px;
+     height: 30px;
+     font-size: 16px;
+     font-weight: 600;
+     color: #fff;
+     border: none;
+   }
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+
+.square3 {
+ position: relative;
+ width: 100%;
+ height:auto;
+ float: left;
+top:70px; 
+background:#fff;
+}
+
+.heading2{
+ position:relative;
+      font-size: 40px;
+      font-family:Times New Roman;
+      color:#1F1F1F;
+      text-align: center;
+      }
+
+.column2{
+position: relative;
+height: 400px;
+width: 250px;
+background:rgb(241, 241, 241);
+margin:5% 20px; 
+border-radius:15px; 
+display:inline-block;
+
+box-shadow: 15px 15px  20px 20px rgba(202, 194, 194, 0.836);
+
+}
+.column2:before{
+  content: '';
+  position: absolute;
+top: 0;
+left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#fff, #ffd6d6);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  
+}
+.column2:hover:before{
+      transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  border-radius:15px; 
+}
+
+        .column2:hover{
+         transform: translateY(-40px);
+          transition: .5s;
+        border-radius:15px; 
+       
+        }
+
+.product{
+position: absolute;
+height: 35%;
+width:85%;
+margin-top: 15%;
+margin-left:-102px;
+margin-right: 2px;
+}
+.information{
+position: absolute;
+margin-top: 75%;
+ text-align: left;
+ font-size: 15px;
+color: #1F1F1F;
+font-weight: 500;
+font-style: italic;
+ font-family: calibri;    
+ 
+
+}
+
+
+.star2{
+        position: absolute;
+        font-size: 18px;
+        margin-left: -125px;
+        margin-top: 103%;
+         }
+
+ .price2{
+          position: absolute;
+          font-size: 27px;
+          color: rgb(184, 32, 32);
+          margin-top: 112%;
+          float: left;
+         margin-left: 5px;
+           }
+      
+
+.previous-price2{
+position: absolute;
+ color: grey;
+ font-size: 16px;
+ margin-left:160px;
+ margin-top: 104%;
+}
+
+.addToCart2{/*BUTONI POSHT QMIMIIT*/
+position: absolute;
+margin-left:-120px;
+margin-top: 355px;
+ margin-left:-120px;
+ height: 25px;
+  width: 94%;
+background-color: #4d6061;
+  border-radius: 30px;
+  font-size: 16px;
+ font-weight: 700;
+ color: #fff;
+float: left;
+border: none;
+}
+
+footer{
+width:100%;
+background-color: #050505;
+ color: #fff;
+ padding-top: 40px;
+ float: left;
+ position: relative;
+ margin-top: 18%;
+ height: auto;
+}
+.footer-navigation {
+display: inline-block;
+position: relative;
+
+}
+.footer-contact {
+display: inline-block;
+position: relative;
+}
+
+.footer-navigation {
+display: inline-block;
+position: relative;
+
+}
+
+
+.footer-follow {
+display: inline-block;
+position: relative;
+
+}
+
+.footer-follow .fa{
+margin:10px 10px;
+align-items:center;}
+
+.footer-navigation a, .footer-follow a{
+color: #fff;
+background-color: transparent;
+}
+
+
+.footer-legal {
+display: inline-block;
+position: relative;
+
+}
+
+
+.footer-bottom {
+height: 50px;
+width: 100%;
+background-color: #000;
+font-style: italic;
+text-align: center;
+padding: 20px 0;
+position: relative;
+margin-top: 150px;
+}
+
+.footer-bottom p{
+font-size: 14px;
+word-spacing: 2px;
+letter-spacing: 1px;
+text-transform: capitalize;
+position: relative;
+}
+
+
+@media only screen  and (max-width: 600px) {
+.slogani{
+  font-size:20px;
+}
+}
