@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+  background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)) , url(img/a.jpg);
+  background-size:cover;
+  height:100vh;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+header{
+  position:fixed;
+  width:100%;
+  height:70px;
+  background:#1f1f1f;
+  z-index:999;
+}
+
+nav{
+  line-height:70px;
+  width:100%;
+}
+
+nav .mainMenu{
+ float:right;
+  right:10px;
+}
+
+nav .mainMenu li {
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 5px;
+    }
+
+    nav .mainMenu li a{
+        color: #fff;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+       text-decoration:none;
+      font-weight:600;
+    }
+
+    a.active , a:hover{
+        background: #fff;
+        transition: .3s;
+        color:#1f1f1f !important;
+    }
+
+.logo img{
+  height:60px;
+  width:60px;
+  z-index:2;
+  margin:3px 10px;
+}
+.logo h1{
+  position:absolute;
+  left: 65px;
+  top:0;  
+  color:#fff !important;
+}
+.logo h1 span{
+  color:rgb(56, 129, 151);
+  font-weight:700;
+font-size:3rem;
+}
+
+::selection{
+    background-color: transparent;
+    color:red;
+}
+
+
+
+      ::-webkit-scrollbar{
+        width:10px;
+        background-color:grey;
+      }
+
+       ::-webkit-scrollbar-track{
+        border-radius:5px;
+         box-shadow: 0 0 10px grey;
+      }
+
+       ::-webkit-scrollbar-thumb{
+        border-radius:5px;
+        background-color:whitesmoke;
+       }
+.board {
+  position:relative;
+    width: 500px;
+margin-top: 150px;
+	margin-left:200px;
+}
+
+.info {
+  color:rgb(179, 98, 40);
+    width: 400px;
+    margin: auto;
+}
+.info .span{
+  display:block;
+  border:none;
+  border-radius:3px;
+  width:300px;
+  height: 40px;
+  box-shadow: 5px 5px 15px 15px #bab5b5;
+  margin-left:400px;
+  position:relative;
+ top:-400px;
+  background-color:#fff;
+}
+
+
+  
+.move-history {
+    max-height: 100px;
+    overflow-y: scroll;
+  margin-left: 400px;
+    position: absolute;
+    margin-top: -400px;
+text-transform:uppercase;
+  color:#1f1f1f;
+  background-color:#fff;
+}
+      

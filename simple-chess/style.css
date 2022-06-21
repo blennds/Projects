@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(247, 233, 233);
+}
+
+header{
+  position:fixed;
+  width:100%;
+  height:70px;
+  background:#1f1f1f;
+  z-index:999;
+}
+
+nav{
+  line-height:70px;
+  width:100%;
+}
+
+nav .mainMenu{
+ float:right;
+  right:10px;
+}
+
+nav .mainMenu li {
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 5px;
+    }
+
+    nav .mainMenu li a{
+        color: #fff;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+       text-decoration:none;
+      font-weight:600;
+    }
+
+    a.active , a:hover{
+        background: #fff;
+        transition: .3s;
+        color:#1f1f1f !important;
+    }
+
+.logo img{
+  height:60px;
+  width:60px;
+  z-index:2;
+  margin:3px 10px;
+}
+.logo h1{
+  position:absolute;
+  left: 65px;
+  top:0;  
+}
+.logo h1 span{
+  color:rgb(56, 129, 151);
+  font-weight:700;
+font-size:3rem;
+}
+
+::selection{
+    background-color: transparent;
+    color:red;
+}
+
+
+
+      ::-webkit-scrollbar{
+        width:10px;
+        background-color:grey;
+      }
+
+       ::-webkit-scrollbar-track{
+        border-radius:5px;
+         box-shadow: 0 0 10px grey;
+      }
+
+       ::-webkit-scrollbar-thumb{
+        border-radius:5px;
+        background-color:whitesmoke;
+       }
+video {
+    height: 100%;
+     background-position: center;
+    background-size: cover ;
+    margin-top: -50px -10px;
+    opacity:10.5;
+    width: 100%;
+  outline:none;
+  overflow:hidden;
+  position:relative;
+}
+      
+:root{
+    font-size:17px;
+}
+      html{
+        scroll-behaviour:smooth;
+      }
+
+
+.text h1  {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    font-size: 3rem;
+}
+
+
+.text p{
+    top: 57%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    font-size: 1.3rem;
+
+}
+.text button{
+    top: 65%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(56, 129, 151);
+        border: none;
+    
+}
+.text h1 span {
+  color:rgb(56, 129, 151);
+  font-weight:700;
+font-size:4rem;
+}
+
+.arrow-btn{
+   position:fixed;
+  z-index:900;
+  height:55px;
+  width:55px;
+  background-color:rgba(56, 129, 151, 0.59);
+  top: 90%;
+ left:97%;
+  transform:translate(-50% ,-50%);
+  float:right;
+  border-radius:50%;
+  border:none;
+  color:#1F1F1F;
+  overflow:hidden;
+}
+
+.arrow-btn h1{
+  animation: arrow-top 1s infinite linear ;
+}
+
+@keyframes arrow-top {
+  0% {transform:translateY(100%);}
+  100% {transform:translateY(0%);}
+}
+
+.square{
+  background-color:#fff;
+  width:100%;
+  height:auto;
+  position:relative;
+  top:-100px;
+  text-shadow:3px 3px lightblue;
+  display:grid;
+  grid-row-templates:1fr 1fr 1fr 1fr 1fr 1fr;
+  
+
+}
+
+.heading{
+  text-align:center;
+  transform:translateY(80px);
+  text-transform:uppercase;
+  font-weight:700;
+  font-family:Times New Roman;
+  position:relative;
+  margin-bottom:100px;
+  color:#333;
+}
+
+.chess-board{
+  margin:100px 0px;
+  position:relative;
+  
+}
+.board { 
+  width:400px;
+  height:500px;
+  background:red;
+  overflow:hidden;
+box-shadow: 15px 15px 25px 25px grey;
+  float:left;
+  position:relative;
+  left:15%;
+}
+
+.board img{
+  width:400px;
+  height:500px;
+}
+
+
+
+.chess-board-information{
+  position:relative;
+  float:right;
+  width:400px;
+  right:10%;
+
+}
+
+.chess-paragraph, .chess-heading,.chess-heading-reverse, .chess-paragraph-reverse{
+  color:#333;
+}
+
+
+
+/*-----------------------------REVERSED ELEMENT OF CHESS BOARD----------------------------------------------------------------*/
+
+
+
+.chess-board-reverse{
+  margin:100px 0px;
+  position:relative;
+  
+}
+.board-reverse { 
+  overflow:hidden;
+box-shadow: 15px 15px 25px 25px grey;
+  position:relative;
+  right:10%;
+  float:right;
+  color:#333;
+}
+.board-reverse img{
+  width:400px;
+  height:500px;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+
+}
+
+
+
+
+.chess-board-information-reverse{
+  position:relative;
+  float:left;
+  width:400px;
+  left:15%;
+
+}
+
+
+
+
+
+footer{
+  width:100%;
+  background-color: #050505;
+   color: #fff;
+   padding-top: 40px;
+   float: left;
+   position: relative;
+   margin-top: 18%;
+   height: auto;
+}
+
+
+.footer-navigation {
+  display: inline-block;
+  position: relative;
+
+}
+.footer-contact {
+  display: inline-block;
+  position: relative;
+}
+
+.footer-navigation {
+  display: inline-block;
+  position: relative;
+
+}
+
+
+.footer-follow {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.footer-follow .fa{
+ margin:10px 10px;
+  align-items:center;}
+
+.footer-navigation a, .footer-follow a{
+  color: #fff;
+  background-color: transparent;
+  text-decoration:none;
+  font-size:25px;
+  font-weight:600;
+}
+
+
+.footer-legal {
+  display: inline-block;
+  position: relative;
+
+}
+
+
+.footer-bottom {
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+ font-style: italic;
+ text-align: center;
+ padding: 20px 0;
+ position: relative;
+ margin-top: 150px;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+ word-spacing: 2px;
+ letter-spacing: 1px;
+ text-transform: capitalize;
+ position: relative;
+}
+
+
