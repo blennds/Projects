@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN | Blest Fashion</title>
+      <link rel="stylesheet"  type="text/css" href="../CSS/login.css">
+      <link rel="icon" href="../img/logo-icon.png" type="image/x-icon">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    <link rel="icon" href="../img/logo-icon.png" type="image/x-icon">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       
+    </head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../HTML/index.html">
+                <img src="../img/logo.png" alt="logoja">
+            </a>
+            </div>
+
+
+            <!--this is burger menu-->
+            <label for="burger-menu">
+                <span class="span"></span>
+                <span  class="span"></span>
+                <span  class="span"></span>
+                
+               
+            </label>
+            <input type="checkbox" name="burger-menu" id="burger-menu">
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href="login.html" class="active">Log in</a></li>
+                <li><div class="shopping-bag">
+                    <img src="../img/shopping-bag.png" alt="">
+                    <div class="shopping-bag-number">0</div>
+                </div></li>
+            </ul>
+
+            
+
+        </nav>
+    </header>   
+
+
+
+  <form action="index.html">
+     
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Log in with Facebook
+         </a>
+        <a href="#" class="apple btn">
+          <i class="fa fa-apple fa-fw"></i> Log in with Icloud
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Log in with Google
+        </a>
+        <h3>OR</h3>
+
+        <div class="login">
+  <div class=" alert-warning" role="alert">
+  <b>Warning:</b><p>Password must contain at least one number, one uppercase, a lowercase letter, and at least 8 or more characters</p>
+</div>     
+          
+   <label for="" class="label-login">Email address or username</label><br>
+        <input type="email" placeholder="Email address or username" required=""><br>
+    <label for="" class="label-login">Password</label><br>
+        <input type="password" placeholder="Password" required=""  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"><br>
+          <a href="">Forgot your password?</a><br>
+          <input type="submit" value="Log in " id="submit"><br><br><hr>
+
+          <h3>Don't have an account</h3><br>
+          
+            
+          <button class="signUp-btn" onclick="window.location.href = 'signup.html';">Sign Up </button>
+         
+        </div>
+      </div>
+    </div>
+  </form>
+  </div>
+  
+    
+
+
+</body>
+</html>
