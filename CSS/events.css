@@ -1,0 +1,352 @@
+.background{
+  width: 100%;
+  height: 350px;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../img/events-bg.jpeg');
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+display:flex;
+justify-content:center;
+align-items:flex-end;
+}
+
+.background h1{
+  color: whitesmoke;
+  text-transform: uppercase ;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+margin-bottom: 60px ;
+}
+
+.background h1 span{
+  color: rgb(161, 48, 48);
+}
+
+input[type="radio"]{
+margin-left: 30px;
+}
+ul.gallery div {
+  display: inline-block;
+  opacity:1;
+  
+}
+label {
+  cursor: pointer;
+  color: #000;
+  padding: 5px 10px;
+  text-align: center;
+  margin: 20px 0px;
+}
+label:hover{
+    background-color: rgb(161, 48, 48);
+    border-radius: 5px;
+    color: #fff;
+}
+
+#select-all:checked + label ,
+#hiking:checked + label, 
+#cycling:checked + label, 
+#yoga:checked + label, 
+#running:checked + label, 
+#walking:checked + label, 
+#skiing:checked + label, 
+#swimming:checked + label{
+  background-color: rgb(161, 48, 48);
+  border-radius: 5px;
+  color : #fff;;
+}
+
+
+/*Select Categorie*/	
+ input#hiking:checked ~ .gallery div:not(.hiking), 
+input#cycling:checked ~ .gallery div:not(.cycling),
+input#swimming:checked ~ .gallery div:not(.swimming),
+input#yoga:checked ~ .gallery div:not(.yoga), 
+input#running:checked ~ .gallery div:not(.running), 
+input#walking:checked ~ .gallery div:not(.walking),
+input#skiing:checked ~ .gallery div:not(.skiing){
+    display:none;
+}
+
+
+.main-boxes {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    background: #fff;
+    overflow: hidden !important /*when scrolling and showed the content to hidden the right part*/;
+    padding-top: 30px;
+  }
+
+
+  /* this is for button load more to hide cards */
+  .display{
+    display: none;
+    
+  }
+
+  .load-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+ 
+ 
+  .main-boxes .box {
+    position: relative;
+    width: 600px;
+    height: auto;
+    margin: 0px 20px;
+    margin-bottom: 50px;
+    box-shadow: -1px -1px 5px 5px rgba(137, 134, 134, 0.381);
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  
+  
+  .main-boxes .box:hover {
+    box-shadow: -1px -1px 5px 5px rgba(109, 182, 209, 0.557);
+    transform: translateY(-20px);
+    background-color: #fff;
+    transition: 0.5s;
+  }
+  
+  .main-boxes .box .all-img {
+    margin: 30px 0 70px 70px;
+  }
+  
+  .img-slider-1 {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    border: 2px solid #fff;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .img-slider-2 {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 150px;
+    margin: 20px 0px 0 -215px !important ;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .img-slider-3 {
+    position: absolute;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 150px;
+    margin: 40px 0px 0 -230px !important;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .box .box-information {
+    color: #222;
+    right: 3%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+  }
+  
+  .box .box-information h3 {
+    font-weight: 600;
+    font-family: oswald;
+  }
+  
+  .box .box-information h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #333;
+  }
+  
+  .box .box-information p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
+  .box .box-information p a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .box .box-information p a:hover{
+    color: rgb(161, 48, 48);
+  }
+
+  .box .box-information p span i {
+    font-size: 25px;
+    color: rgb(161, 48, 48) !important;
+    margin-right: 10px;
+  }
+  
+  .box-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 8888 !important;
+  }
+  
+  .box-preview .preview {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background: #fff;
+    margin: 2rem;
+    width: 80%;
+    height: 530px;
+    z-index: 8889 !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  .box-preview .preview.active {
+    display: inline-block;
+  }
+  
+  .box-preview .preview .fa-times {
+    position: sticky;
+    float: right;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    color: #444;
+    font-size: 1rem;
+   padding:2px 6px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+  }
+  .box-preview .preview .fa-times:hover {
+    color: red;
+    background-color: #fff;
+    border: 1px solid red;
+    transform: rotate(90deg);
+    transition: 0.3s;
+  }
+
+  .imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+    cursor: pointer;
+  }
+  
+  .imgs img {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+  }
+  
+  .imgs img:hover {
+    border: 2px solid rgb(111, 18, 18);
+    transition: 0.1s;
+    transform: scaleX(2) scaleY(1.5);
+  }
+  
+  #location a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #location a:hover{
+    color: rgb(161, 48, 48);
+  }
+
+  #location span i {
+    font-size: 25px;
+    color: rgb(161, 48, 48) !important;
+    margin-right: 10px;
+  }
+
+
+ 
+  @media only screen and (max-width:635px) {
+    .main-boxes{
+      width: 100%;
+    }
+
+    .display{
+      width: 80%;
+    }
+    .main-boxes .box {
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .box .box-information {
+      width: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .imgs img {
+      height: 70px;
+      width: 70px;
+      margin: 10px;
+    }
+  }
+
+  @media only screen and (max-width:480px) {
+
+    .display{
+      width: 90%;
+    }
+
+    .main-boxes .box .all-img {
+      margin: 30px 0 70px 30px;
+    }
+ 
+    .imgs{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .imgs img {
+      height: auto;
+      width: 90%;
+      margin: 10px;
+    }
+
+    
+    .imgs img:hover {
+     transform: none ;
+    }
+
+  }
+  
